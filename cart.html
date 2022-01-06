@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #products {
+          
+         
+          height: 600px;
+         
+          display: grid;
+          grid-template-columns: 26% 26% ;
+          grid-gap: 2%;
+          justify-content: center;
+        }
+
+        img{
+            width: 80%;
+        }
+        #total{
+            text-align: right;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #tol_price{
+            text-align: right;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        #dis{
+            text-align: right;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .right{
+            text-align: right;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .box2{
+            float:right;
+            width:300px;
+            height:100px;
+        }
+        .box1 {
+            height:500px;
+            width:800px;
+            
+        }
+        .box1 p {
+            font-family: Helvetica, sans-serif;
+            color:#2f2e31;
+            font-weight: 600;
+
+        }
+        .green{
+            width:100px;
+            height:40px;
+            border:1px solid red;
+            background-color: #5ba65f;
+            color:cornsilk;
+            font-family:  Helvetica, sans-serif;
+            font-weight: 600;
+            float:right;
+        }
+    </style>
+ 
+</head>
+
+<body>
+
+   <div class="box2">
+    <h2 id="total"></h2>
+    <h2 id="tol_price"></h2>
+
+    <a href="check_vani.html">
+        <button class="green">Checkout</button>
+      </a> 
+    
+  </div>
+    
+   
+   <div class="box1">
+    <div id="products"></div>
+</div>
+   
+
+    
+
+    
+   
+      
+    
+</body>
+
+</html>
+
+<script>
+//1. get local storage data first
+
+let cart = JSON.parse(localStorage.getItem('cart') ); // to convert into Object format just Parse it.
+console.log("mycart: " , cart);
+
+/// now we have the data we just need to show to DOM.
+// so copied function and updated a bit.
+
+let parent= document.getElementById("products");
+
+let total = document.getElementById("total");
+let tol_price = document.getElementById("tol_price");
+
+let discount_price = document.getElementById("dis")
+
+let pricee=0;
+let c=0;
+
+let apply_cont = 1;
+
+
+
+if( apply_cont==1)
+{
+function showProducts(){
+  cart.forEach(function(el)  // el act as variable to store obj element datas
+   {
+   // console.log(el.name);
+    c++;
+
+     pricee = pricee +  Number(el.price);
+     //console.log(pricee)
+
+    let div = document.createElement('div');
+
+    
+
+    //div.style.backgroundColor= "red"
+
+    let img = document.createElement('img');
+    img.src= el.img;
+
+    let product_price = document.createElement('p'); // p tag
+    product_price.textContent = el.price
+
+    let product_name = document.createElement('p');
+    product_name.textContent = el.name
+
+
+    let addtocart_btn = document.createElement('button');
+    addtocart_btn.innerText = "Add to Cart"
+
+    addtocart_btn.onclick = function (){
+
+        addtoCart( el ); //here this el which has all info about data, then passed 
+                          // that's why we are using function wrapper here.
+
+    };
+
+    div.append(img, product_name , product_price ); // after createing div dynamiclally we append in that div
+
+    parent.append(div)  // parent is the main div element in html we created in line 30 and grabbed it in line 88
+    
+    
+  
+
+   });
+
+}
+
+} /// apply cont ends
+
+showProducts();
+
+
+let discount = tol_price.textContent = "Total ₹ " + pricee;
+
+let cou = document.getElementById("coupon")
+console.log(cou.value)
+
+
+
+
+function apply()
+{   
+    
+ 
+
+    discount_price.textContent = "Applied total=" + (pricee - (pricee * (30/100) ));
+   
+    
+}
+
+
+
+
+
+
+
+</script>

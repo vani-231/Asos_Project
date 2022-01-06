@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All mens_products</title>
+    <style>
+        #products{
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-gap:2%;
+            justify-content: center;
+            height: 700px;
+            margin:0;
+        }
+        .center{
+            margin:auto;
+            text-align: center;
+            font-family:  Helvetica, sans-serif;
+            margin-top:15px;
+        }
+        .pp{
+            font-family:  Helvetica, sans-serif;
+            color:grey;
+        }
+        img{
+            width:100%;
+        }
+        #btn{
+            margin:auto;
+            padding:3px;
+        }
+        .below_nav{
+            width: 100%;
+            height: 120px;
+           
+            justify-content: center;
+            background-color: #eeeeee;
+            margin:10px;
+            margin-bottom: 100px;
+        }
+        select{
+            font-size: 22px;
+            padding: 10px 20px;
+            background-color: #eeeeee;
+            margin:10px;
+            color:#6b7277;
+            border: 1px solid grey;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        button{
+            cursor:pointer;
+            padding:10px 12px 8px;
+            background:#fff;
+            border-radius:50%;
+            display:inline-block;
+            margin:0 0 15px;
+            color:rgb(211, 51, 51);
+            float:right;
+           
+        }
+    
+
+    button:hover {
+      color:rgb(231, 9, 9);
+    }
+
+    button:before {
+      font-family:fontawesome;
+      content:'\f004';
+      font-style:normal;
+    }
+    
+    #btn{
+       background-color:#eeeeee;
+       width:100px;
+
+
+    }
+
+    #products > div{
+       
+    }  
+
+    .footer {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    justify-content: space-evenly;
+     }
+   .bold {
+    font-weight: 700;
+    }
+
+
+    .fullpage {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+}
+
+/*Top Navbar CSS Below------------------------------------------------------------------------------------------*/
+
+.fullNav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 1px solid #2d2d2d;
+    
+}
+
+.topnav {
+  display: flex;
+  background-color:#2d2d2d;
+  font-family:  Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.topnav a {
+  color: white;
+  text-align: center;
+  /* margin: auto; */
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.asosMN {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 8%;
+}
+
+.asosIcons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-right: 8%;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  width: 80%;
+  border: none;
+  margin: 8px 16px 8px 16px;
+  font-size: 17px;
+}
+
+/* Search Button Clickable  */
+.container {
+    margin: auto;
+    width: 55%;
+}
+.searchDiv {
+  display: flex;
+  flex-direction: row;
+}
+.search-field {
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -33px;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+.asos {
+    font-weight: 700;
+    font-size: larger;
+}
+
+/* @media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+} */
+/*Sales Div Css below----------------------------------------------------------------------------*/
+
+.saleBelowNav {
+    background-color: darkorange;
+    margin: 0px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
+
+.sale {
+    padding: 0%;
+    margin: 0%;
+    font-weight: 700;
+    color: white;
+}
+
+/*Central Big Div with Background Image - CSS Below-------------------------------------------------------------------------------------------*/
+
+.homeCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.outmost {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .d1 {
+        padding-right: 30px;
+        padding-left: 30px;
+        background-color: brown;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    .btn1 {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        padding: 4px 20px 4px 20px;
+        font-weight: 700;
+        color: white;
+        background-color: brown;
+        border: 1px solid white;
+    }
+
+    .d1b {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        padding: 4px 20px 4px 20px;
+        font-weight: 700;
+        color: white;
+        background-color: brown;
+    }
+
+    .d2 {
+        height: 698px;
+        width: 1400px;
+        background-image: url("images/Asos_Background.jpg");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .d2a {
+        color: white;
+        font-size: 70px;
+        font-weight: 700;
+    }
+    .d2b {
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        margin: 10px 0px 30px 0px;
+    }
+    .btnd2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .btnd2 {
+        color: black;
+        background-color: white;
+        border: none;
+        padding: 10px 25px;
+        font-weight: 700;
+    }
+
+    .d3 {
+        width: 1400px;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .d3a,.d3b {
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        font-weight: 700;
+    }
+
+/*Social Media & Payments Icons CSS-----------------------------------------------------------------*/
+.socialMediaIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#icon {
+    margin: 1%;
+    font-size: 130%;
+}
+
+/*Footer CSS below--------------------------------------------------------------------------------------*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    justify-content: space-evenly;
+}
+.bold {
+    font-weight: 700;
+}
+
+          
+     
+    </style>
+    <script src="https://kit.fontawesome.com/8ad275f1fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="main">
+    <div class="fullNav">
+        <div class="topnav">
+            <div class="asosMN">
+                <a href="#asos" class="asos">ASOS</a>
+                <a href="#women" class="women">WOMEN</a>
+                <a href="#men" class="men">MEN</a>
+            </div>
+            <div class="container">
+                <form action="/" method="GET" class="searchDiv">
+                  <input type="search" placeholder="Search for items & brands" class="search-field" />
+                  <button type="submit" class="search-button">
+                    <img src="https://www.kindacode.com/wp-content/uploads/2020/12/search.png">
+                  </button>
+                </form>
+            </div>
+            <div class="asosIcons">
+                <a class="iuser" href="signup.html"><i class="far fa-user"></i></a>
+                <a class="iwishlist" href="#wishlist"><i class="far fa-heart"></i></a>
+                <a class="ibag" href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+          </div>
+    </div>
+
+
+
+       <div class="upper">
+           <h1 class="center">Men's Sale: All products </h1>
+           <p class="pp">Want wardrobe essentials that work harder for your style? Stock up with our sale and sale vests. 
+               Whether you’re looking to expand your wardrobe with a few new unique designs, or just need to replace your normal rotation, our men’s sale tees have a great range of options that will carry you through to next season
+                and beyond. With the likes of French Connection and Brave Soul featuring in our  sale, as well as ASOS DESIGN</p>
+
+       </div>
+
+
+   <a href="cart.html"   ><button id="btn">Go To Cart</button></a>
+
+
+<div class="below_nav">
+   
+<select id="Sort" onchange="Sorting()">
+    <option > Sort</option>
+   <option value="LH"> Price low to high</option>
+   <option value="HL">Price high to low</option>
+</select>
+
+ <select id="sizes" onchange="Sizes()">
+    <option > Size</option>
+   <option value="small">size small</option>
+   <option value="medium">size medium</option>
+   <option value="large">size large</option>
+</select>
+
+
+   <select id = "brand_select" onchange="brand()">
+    
+    <option    > BRAND   </option>
+    <option   value ="nike"> Nike </option> 
+    <option   value ="jack"> Jack&Jones</option>
+    <option   value ="asos"> ASOS   </option> 
+    <option   value ="polo"> Polo   </option>   
+
+    </select>
+
+    <select id = "color_select" onchange="color()">
+    
+        <option    > COLOR  </option>
+        <option   value ="grey"> Grey </option> 
+        <option   value ="white"> White</option>
+        <option   value ="black"> Black   </option> 
+        <option   value ="blue"> Blue  </option>   
+    
+        </select>
+
+        <select id = "product_select"  onchange="redir()">
+    
+            <option   > Product Type  </option>
+            <option value="t"  >T-Shirt </a>  </option>  
+          
+            <option value="j"  > Jeans</option>
+            <option  value="s" > Shoes  </option> 
+          
+        
+            </select>
+</div>
+   
+  
+
+<div>
+    
+   <div id="products"></div>
+   </div>
+
+  
+</div>
+
+
+
+
+
+
+    
+</body>
+</html>
+
+
+
+
+<script>
+  
+
+    let data = [ 
+    {
+    
+    name:"Reebok Running Zig Kinetica Concept 1 trainers in off white",
+    price: "3500",
+    img:"https://images.asos-media.com/products/reebok-running-zig-kinetica-concept-1-trainers-in-off-white/21915423-1-cream?$n_240w$&wid=238&fit=constrain " ,
+    fit:"1",  // 1 = small 2= medium 3= large
+    brand:"reebok",
+    color:"white",
+
+
+
+}, {
+
+    name:"River Island monogrammed slider in brown",
+    price: "4200",
+    img:"https://images.asos-media.com/products/river-island-monogrammed-slider-in-brown/23343035-1-brown?$n_240w$&wid=238&fit=constrain " ,
+    fit:"2",  // 1 = small 2= medium 3= large
+    brand:"river",
+    color:"brown",
+
+
+
+},
+        {
+        name:"Turtle neck Tshirt small",
+        price: "2000",
+        img:"https://images.asos-media.com/products/topman-oversized-turtle-neck-t-shirt-in-pink/200274698-1-lightpink?$n_320w$&wid=317&fit=constrain" ,
+        fit:"1",  // 1 = small 2= medium 3= large
+        brand:"",
+        color:"white",
+        
+    },
+     
+    {
+        name:"ASOS DESIGN oversized t-shirt in black",
+        price: "900",
+        img:"https://images.asos-media.com/products/asos-design-oversized-knitted-t-shirt-in-black/22793461-1-black?$n_320w$&wid=317&fit=constrain" ,
+        fit:"1",  // 1 = small 2= medium 3= large
+        brand:"asos",
+        color:"black",
+        
+    },
+
+    {
+        name:"ASOS French Connection t-shirt light grey",
+        price: "5000",
+        img:"https://images.asos-media.com/products/french-connection-colour-block-t-shirt-in-black-light-grey/24411895-1-greymelwhiteblack?$n_320w$&wid=317&fit=constrain" ,
+        fit:"1",  // 1 = small 2= medium 3= large
+        brand:"asos",
+        color:"grey",
+        
+    },
+    {
+        name:"Brave Soul oversized t-shirt in brown",
+        price: "4999",
+        img:"https://images.asos-media.com/products/brave-soul-oversized-t-shirt-in-brown/23658379-1-brown?$n_320w$&wid=317&fit=constrain" ,
+        fit:"3",  // 1 = small 2= medium 3= large
+        brand:"brave",
+        color:"brown",
+        
+    },
+    {
+        name:"Brave Soul raw edge t-shirt in sand",
+        price: "3000",
+        img:"https://images.asos-media.com/products/brave-soul-raw-edge-t-shirt-in-sand/23658357-1-sand?$n_320w$&wid=317&fit=constrain" ,
+        fit:"2",  // 1 = small 2= medium 3= large
+        brand:"brave",
+        color:"white",
+        
+    },
+    {
+        name:"Nike Running colourblock tank in blue",
+        price: "4000",
+        img:"https://images.asos-media.com/products/nike-running-colourblock-tank-in-blue/23565940-1-blue?$n_240w$&wid=238&fit=constrain" ,
+        fit:"1",  // 1 = small 2= medium 3= large
+        brand:"nike",
+        color:"blue",
+        
+    },
+    {
+        name:"Jack & Jones logo crew neck t-shirt in",
+        price: "3000",
+        img:"https://images.asos-media.com/products/jack-jones-logo-crew-neck-t-shirt-in-navy/23953327-1-navyblazer?$n_240w$&wid=238&fit=constrain" ,
+        fit:"2",  // 1 = small 2= medium 3= large
+        brand:"jack",
+        color:"blue",
+        
+    },
+    {
+        name:"Nike Training Sport  logo t-shirt in blue",
+        price: "4999",
+        img:"https://images.asos-media.com/products/nike-training-sport-clash-logo-t-shirt-in-blue/23546709-1-blue?$n_240w$&wid=238&fit=constrain" ,
+        fit:"2",  // 1 = small 2= medium 3= large
+        brand:"nike",
+        color:"blue",
+        
+    },
+    {
+        name:"Jack & Jones 5 pack crew neck t-shirts in multi",
+        price: "7999",
+        img:"https://images.asos-media.com/products/jack-jones-5-pack-crew-neck-t-shirts-in-multi/22467468-1-multi?$n_240w$&wid=238&fit=constrain" ,
+        fit:"2",  // 1 = small 2= medium 3= large
+        brand:"jack",
+        color:"black",
+        
+    },
+    {
+        name:"Reebok 3 pack t-shirts in white",
+        price: "8999",
+        img:"https://images.asos-media.com/products/reebok-3-pack-t-shirts-in-white/22044635-1-white?$n_240w$&wid=238&fit=constrain" ,
+        fit:"1",  // 1 = small 2= medium 3= large
+        brand:"reebok",
+        color:"white",
+        
+    },
+    {
+        name:"Avant Garde gym spartan t-shirt in light camo",
+        price: "1200",
+        img:"https://images.asos-media.com/products/avant-garde-gym-spartan-t-shirt-in-light-camo/24211283-1-lightcamo?$n_240w$&wid=238&fit=constrain" ,
+        fit:"2",  // 1 = small 2= medium 3= large
+        brand:"avant",
+        color:"grey",
+        
+    },
+    {
+        name:"Tommy Hilfiger crew neck lounge t-shirt",
+        price: "8999",
+        img:"https://images.asos-media.com/products/tommy-hilfiger-crew-neck-lounge-t-shirt-with-contrast-chest-panel-and-logo-in-white/11427856-1-white?$n_240w$&wid=238&fit=constrain" ,
+        fit:"2",  // 1 = small 2= medium 3= large
+        brand:"tommy",
+        color:"white",
+        
+    },
+    {
+        name:"Friend or Faux humpback printed sleeveless white",
+        price: "999",
+        img:"https://images.asos-media.com/products/friend-or-faux-humpback-printed-sleeveless-vest-in-white/23629636-1-white?$n_240w$&wid=238&fit=constrain" ,
+        fit:"1",  // 1 = small 2= medium 3= large
+        brand:"ff",
+        color:"white",
+        
+    },
+    {
+        name:"Jack & Jones large logo t-shirt in white",
+        price: "1999",
+        img:"https://images.asos-media.com/products/jack-jones-large-logo-t-shirt-in-white/22468798-1-white?$n_240w$&wid=238&fit=constrain" ,
+        fit:"2",  // 1 = small 2= medium 3= large
+        brand:"jack",
+        color:"white",
+        
+    },
+    {
+    
+    name:"Abercrombie & Fitch sliders in white with text logo",
+    price: "4000",
+    img:"https://images.asos-media.com/products/abercrombie-fitch-sliders-in-white-with-text-logo/23294114-1-white?$n_320w$&wid=317&fit=constrain " ,
+    fit:"3",  // 1 = small 2= medium 3= large
+    brand:"aber",
+    color:"white",
+
+
+
+},
+{
+
+    name:"Topman cuban boots in stone",
+    price: "2500",
+    img:"https://images.asos-media.com/products/topman-cuban-boots-in-stone/20758689-1-stone?$n_320w$&wid=317&fit=constrain " ,
+    fit:"2",  // 1 = small 2= medium 3= large
+    brand:"topman",
+    color:"brown",
+
+
+
+},
+{
+
+    name:"Topman boots in grey snake print",
+    price: "2800",
+    img:"https://images.asos-media.com/products/topman-boots-in-grey-snake-print/22484000-1-grey?$n_320w$&wid=317&fit=constrain",
+    fit:"1",  // 1 = small 2= medium 3= large
+    brand:"topman",
+    color:"grey",
+
+
+
+},
+{
+
+    name:"ASOS DESIGN chelsea boots in black faux suede",
+    price: "5000",
+    img:"https://images.asos-media.com/products/asos-design-chelsea-boots-in-black-faux-suede/12550506-1-black?$n_320w$&wid=317&fit=constrain " ,
+    fit:"3",  // 1 = small 2= medium 3= large
+    brand:"asos",
+    color:"black",
+
+
+
+},
+{
+
+    name:"ASOS DESIGN cuban heel western chelsea boots in black leather with buckle detail",
+    price: "5500",
+    img:"https://images.asos-media.com/products/asos-design-cuban-heel-western-chelsea-boots-in-black-leather-with-buckle-detail/11165915-1-black?$n_320w$&wid=317&fit=constrain " ,
+    fit:"3",  // 1 = small 2= medium 3= large
+    brand:"asos",
+    color:"black",
+
+
+
+},
+
+{
+
+    name:"Puma RS 2.0 Futura trainers in black white and silver",
+    price: "3250",
+    img:"https://images.asos-media.com/products/puma-rs-20-futura-trainers-in-black-white-and-silver/201097793-1-black?$n_320w$&wid=317&fit=constrain " ,
+    fit:"2",  // 1 = small 2= medium 3= large
+    brand:"puma",
+    color:"black",
+
+
+
+},
+
+{
+
+    name:"Puma RS 2.0 Futura trainers in white and grey",
+    price: "2950",
+    img:"https://images.asos-media.com/products/puma-rs-20-futura-trainers-in-white-and-grey/201097676-1-white?$n_320w$&wid=317&fit=constrain " ,
+    fit:"1",  // 1 = small 2= medium 3= large
+    brand:"puma",
+    color:"white",
+
+
+
+}, {
+
+    name:"Puma Lqdcell Optic Stealth trainers in black and grey",
+    price: "3200",
+    img:"https://images.asos-media.com/products/puma-lqdcell-optic-stealth-trainers-in-black-and-grey/200267229-1-black?$n_320w$&wid=317&fit=constrain " ,
+    fit:"1",  // 1 = small 2= medium 3= large
+    brand:"puma",
+    color:"black",
+
+},
+
+
+
+       { name:"Polo T-shirt medium",
+        price: "2700",
+        img:"https://images.asos-media.com/products/topman-longline-fit-t-shirt-in-black/200250787-1-black?$n_320w$&wid=317&fit=constrain" ,
+        fit:"2",
+        brand:"polo",
+        color:"black",
+        
+       }, 
+       {name:"Check Polo T-shirt large",
+        price: "2200",
+        img:"https://images.asos-media.com/products/topman-check-polo-in-stone/24053926-1-stone?$n_320w$&wid=317&fit=constrain" ,
+        fit:"3",
+        brand:"polo",
+        color:"grey",
+       },
+       {
+        name:"Skinny fit T-shirt",
+        price: "1400",
+        img:"https://images.asos-media.com/products/topman-skinny-fit-roll-sleeve-t-shirt-in-stone/24406565-1-stone?$n_320w$&wid=317&fit=constrain" ,
+        fit:"1",
+        brand:"",
+        color:"",
+       },
+       {
+        name:"ASOS designed oversized large",
+        price: "3030",
+        img:"https://images.asos-media.com/products/asos-design-co-ord-oversized-t-shirt-in-pique-in-pink/22648320-1-oldrose?$n_320w$&wid=317&fit=constrain" ,
+        fit:"3",
+        brand:"asos",
+        color:"white",
+    },
+       { name:"ASOS designed small",
+        price: "2000",
+        img:"https://images.asos-media.com/products/asos-design-oversized-textured-t-shirt-in-off-white/22792788-1-beige?$n_320w$&wid=317&fit=constrain" ,
+        fit:"1",
+        brand:"asos",
+        color:"",
+       }, 
+       {name:"men medium fit T-shirt",
+        price: "900",
+        img:"https://images.asos-media.com/products/topman-stripe-knitted-polo-in-black-and-camel/200823691-1-black?$n_320w$&wid=317&fit=constrain" ,
+        fit:"2",
+        brand:"",
+        color:"",
+       },
+       {
+        name:"Sixth june summer medium",
+        price: "499",
+        img:"https://images.asos-media.com/products/asos-design-oversized-organic-t-shirt-in-black-with-line-drawing-back-print/22309933-1-black?$n_320w$&wid=317&fit=constrain" ,
+        fit:"2",
+        brand:"",
+        color:"black",
+       },
+       
+       {
+
+name:"Topman stretch skinny jeans with rips in washed black ",
+price: "3000 ",
+img:"https://images.asos-media.com/products/topman-stretch-skinny-jeans-with-rips-in-washed-black/24059052-1-black?$n_320w$&wid=317&fit=constrain " ,
+fit:"1 ",  // 1 = small 2= medium 3= large
+brand:"topman",
+color:"black",
+
+
+
+},
+
+{
+
+name:"Topman organic cotton blend skinny jeans with blow out rips in light wash ",
+price: "2999 ",
+img:"https://images.asos-media.com/products/topman-organic-cotton-blend-skinny-jeans-with-blow-out-rips-in-light-wash/24059146-1-blue?$n_320w$&wid=317&fit=constrain " ,
+fit:"3 ",  // 1 = small 2= medium 3= large
+brand:"topman",
+color:"grey ",
+
+
+
+},
+
+{
+
+name:"ASOS DESIGN straight leg jeans in vintage mid wash ",
+price: "2250 ",
+img:"https://images.asos-media.com/products/asos-design-straight-leg-jeans-in-vintage-mid-wash/23105383-1-midwashblue?$n_320w$&wid=317&fit=constrain " ,
+fit:"1 ",  // 1 = small 2= medium 3= large
+brand:"asos",
+color:" blue",
+
+
+
+},
+
+{
+
+name:"Mennace aftermath straight leg denim jeans in light blue ",
+price: "1999 ",
+img:"https://images.asos-media.com/products/mennace-aftermath-straight-leg-denim-jeans-in-light-blue/23037038-1-lightblue?$n_320w$&wid=317&fit=constrain " ,
+fit:"1 ",  // 1 = small 2= medium 3= large
+brand:"mennace",
+color:"blue ",
+
+
+
+},
+
+{
+
+name:"Lee Daren regular straight fit jeans ",
+price: "4000 ",
+img:"https://images.asos-media.com/products/lee-daren-regular-straight-fit-jeans/23970053-1-blue?$n_320w$&wid=317&fit=constrain " ,
+fit:"3 ",  // 1 = small 2= medium 3= large
+brand:"lee",
+color:"blue ",
+
+
+
+},
+
+{
+
+name:"Lee Luke slim tapered fit jeans ",
+price: "6000 ",
+img:"https://images.asos-media.com/products/lee-luke-slim-tapered-fit-jeans/23969652-1-blue?$n_320w$&wid=317&fit=constrain " ,
+fit:"1 ",  // 1 = small 2= medium 3= large
+brand:"lee",
+color:"blue ",
+
+
+
+},
+
+{
+
+name:"Lee Malone skinny fit jeans ",
+price: "2800 ",
+img:"https://images.asos-media.com/products/lee-malone-skinny-fit-jeans/23969350-1-black?$n_320w$&wid=317&fit=constrain " ,
+fit:"1 ",  // 1 = small 2= medium 3= large
+brand:"lee",
+color:"black ",
+
+
+
+},
+
+{
+
+name:"Wrangler Bryson skinny fit jeans ",
+price: "4500 ",
+img:"https://images.asos-media.com/products/wrangler-bryson-skinny-fit-jeans/23914385-1-black?$n_320w$&wid=317&fit=constrain " ,
+fit:"3 ",  // 1 = small 2= medium 3= large
+brand:"wrangler",
+color:"black ",
+
+
+
+},
+
+{
+
+name:"ASOS DESIGN spray on jeans with power stretch in light wash with rips ",
+price: "4000 ",
+img:"https://images.asos-media.com/products/asos-design-spray-on-jeans-with-power-stretch-in-light-wash-with-rips/22305456-1-lightwashblue?$n_240w$&wid=238&fit=constrain " ,
+fit:"2 ",  // 1 = small 2= medium 3= large
+brand:"asos",
+color:"blue ",
+
+
+
+},
+
+{
+
+name:"ASOS DESIGN relaxed tapered jeans in vintage light blue stone wash ",
+price: "5000 ",
+img:" https://images.asos-media.com/products/asos-design-relaxed-tapered-jeans-in-vintage-light-blue-stone-wash/21237596-1-lightwashvintage?$n_240w$&wid=238&fit=constrain" ,
+fit:" 2",  // 1 = small 2= medium 3= large
+brand:"asos",
+color:"blue ",
+
+
+
+},
+
+{
+
+name:"ASOS DESIGN spray on jeans with power stretch in indigo with knee rip ",
+price: "3499 ",
+img:" https://images.asos-media.com/products/asos-design-spray-on-jeans-with-power-stretch-in-indigo-with-knee-rip/22305462-1-darkwashblue?$n_240w$&wid=238&fit=constrain" ,
+fit:"2 ",  // 1 = small 2= medium 3= large
+brand:"asos",
+color:" blue",
+
+
+
+},
+
+{
+
+name:"ASOS DESIGN spray on jeans with power stretch in washed black with knee rips ",
+price: "5000 ",
+img:"https://images.asos-media.com/products/asos-design-spray-on-jeans-with-power-stretch-in-washed-black-with-knee-rips/22305460-1-washedblack?$n_240w$&wid=238&fit=constrain " ,
+fit:"1 ",  // 1 = small 2= medium 3= large
+brand:"asos",
+color:"black ",
+
+
+
+},
+
+{
+
+name:"ASOS DESIGN spray on jeans in power stretch denim in black with knee rip ",
+price: "2999 ",
+img:" https://images.asos-media.com/products/asos-design-spray-on-jeans-in-power-stretch-denim-in-black-with-knee-rip/10999428-1-black?$n_240w$&wid=238&fit=constrain" ,
+fit:"3 ",  // 1 = small 2= medium 3= large
+brand:"asos",
+color:"black ",
+
+
+
+},
+
+{
+
+name:"Levi's 519 super skinny fit hi-ball jeans in dark wash blue ",
+price: "5000 ",
+img:"https://images.asos-media.com/products/levis-519-super-skinny-fit-hi-ball-jeans-in-dark-wash-blue/24398906-1-gothhebadodadv?$n_240w$&wid=238&fit=constrain " ,
+fit:" 1",  // 1 = small 2= medium 3= large
+brand:"levi",
+color:"blue ",
+
+
+
+},
+
+{
+
+name:"New Look slim cropped jeans in light blue was ",
+price: " 2000",
+img:"https://images.asos-media.com/products/new-look-slim-cropped-jeans-in-light-blue-wash/23140759-1-blue?$n_240w$&wid=238&fit=constrain " ,
+fit:"1 ",  // 1 = small 2= medium 3= large
+brand:"new",
+color:"blue ",
+
+
+
+},
+
+{
+
+name:"Levi's 519 super skinny fit hi-ball jeans in mid wash blu ",
+price: "4500 ",
+img:"https://images.asos-media.com/products/levis-519-super-skinny-fit-hi-ball-jeans-in-mid-wash-blue/24302613-1-dolfsilveradvanced?$n_240w$&wid=238&fit=constrain " ,
+fit:" 3",  // 1 = small 2= medium 3= large
+brand:"levi",
+color:"blue",
+
+
+
+},
+
+{
+
+name:"River Island slim jeans in dark black ",
+price: " 3999",
+img:"https://images.asos-media.com/products/river-island-slim-jeans-in-dark-blue/22721406-1-blue?$n_240w$&wid=238&fit=constrain " ,
+fit:"1 ",  // 1 = small 2= medium 3= large
+brand:"river",
+color:"black",
+
+
+
+},
+
+{
+
+name:"ASOS DESIGN skinny jeans in mid wash blue with heavy rips ",
+price: "6000 ",
+img:"https://images.asos-media.com/products/asos-design-skinny-jeans-in-mid-wash-blue-with-heavy-rips/23164557-1-midwashblue?$n_240w$&wid=238&fit=constrain " ,
+fit:"1 ",  // 1 = small 2= medium 3= large
+brand:"asos",
+color:"blue",
+
+
+
+},
+
+{
+
+name:"ASOS DESIGN skinny jeans with heavy rips and raw hem in light wash blue ",
+price: "4000 ",
+img:"https://images.asos-media.com/products/asos-design-skinny-jeans-with-heavy-rips-and-raw-hem-in-light-wash-blue/23856179-1-lightwashblue?$n_240w$&wid=238&fit=constrain " ,
+fit:"2 ",  // 1 = small 2= medium 3= large
+brand:"asos",
+color:"blue",
+
+
+
+},
+
+{
+
+name:" ASOS DESIGN skinny jeans in mid wash",
+price: "4500 ",
+img:"https://images.asos-media.com/products/asos-design-skinny-jeans-in-mid-wash/11002791-1-midwashblue?$n_240w$&wid=238&fit=constrain " ,
+fit:"1 ",  // 1 = small 2= medium 3= large
+brand:"asos",
+color:"grey",
+
+
+
+},
+
+       
+
+    ];
+
+    let parent = document.getElementById("products") ;
+
+   
+
+
+    function viewProducts( d){
+
+        parent.innerHTML = null;
+       
+        d.forEach( function ( el)
+        {
+        let div = document.createElement('div');
+
+      
+        
+        
+        let img = document.createElement('img');
+        img.src= el.img;
+        img.addEventListener('click' , info)
+
+        let price = document.createElement('p');
+        price.textContent = el.price;
+        price.style.color = "#d31745";
+        price.style.fontSize = "20px";
+        price.style.fontWeight ="700" ;
+
+
+        let name = document.createElement('p');
+        name.textContent= el.name;
+        name.style.fontSize = "14px";
+        name.style.color="grey";
+        name.style.fontFamily="Helvetica";
+        name.addEventListener('click' , info)
+
+
+        let wish_btn = document.createElement('button');
+          wish_btn.innerText = "";
+
+        let cart_btn = document.createElement('button');
+          cart_btn.innerText =""
+         /////////////////////// 
+
+          wish_btn.onclick = function ( ){
+
+            addcart( el);
+          };
+          
+
+          div.append( img , name , price , wish_btn )
+        
+          parent.append(div);
+        
+        
+        
+         } );
+
+
+
+
+    }
+
+    viewProducts(data)
+
+
+    if(localStorage.getItem("cart") === null){
+        localStorage.setItem("cart" , JSON.stringify( []));
+    }
+    
+
+    function info(){
+        window.location.href= "vani_cart.html";
+    }
+   
+    let x= document.getElementById("product_select")
+    function redir(){
+        if(x.value=='t')
+        window.location.href= "tshirt.html";
+        else if(x.value=='j')
+        window.location.href= "jeans.html";
+        else if(x.value=='s')
+        window.location.href= "shoes.html"
+         
+
+    }
+      
+
+
+    function  addcart(e){
+      let myproduct_cart =  JSON.parse( localStorage.getItem("cart") );
+
+      myproduct_cart.push(e);
+
+        localStorage.setItem("cart" , JSON.stringify(myproduct_cart));
+
+      //  console.log("myjjjjjj" ,myproduct_cart );
+
+    }
+
+    
+
+
+
+    
+   
+    function Sorting(){
+        let temp = document.getElementById("Sort")
+         let name= temp.value;
+
+         if(name=="LH")
+         sortLH();
+         else if(name=="HL")
+         sortHL()
+             
+      
+
+    }
+
+    function Sizes(){
+        let temp = document.getElementById("sizes")
+        let name = temp.value;
+
+        if(name=="small")
+        Sfit()
+        else if(name=="medium")
+        Mfit()
+        else if(name=="large")
+        Lfit()
+          
+    }
+
+
+
+
+
+
+    function brand(){
+        let arr = data.filter(function(a) {
+            var temp= document.getElementById("brand_select")
+            var name = temp.value;
+        return  a.brand == name ;
+    
+        } );
+        
+      viewProducts(arr)
+    }
+
+    function color(){
+        let arr = data.filter(function(a) {
+            var temp= document.getElementById("color_select")
+            var name = temp.value;
+        return  a.color == name ;
+    
+        } );
+        
+      viewProducts(arr)
+    }
+
+    function Sfit(){
+        let arr = data.filter(function(a) {
+        return  a.fit <= 1;
+    
+        } );
+        
+      viewProducts(arr)
+    }
+
+    function Mfit(){
+        let arr = data.filter(function(a) {
+        return  a.fit == 2;
+    
+        } );
+        
+      viewProducts(arr)
+    }
+
+    function Lfit(){
+        let arr = data.filter(function(a) {
+        return  a.fit >= 3;
+    
+        } );
+        
+      viewProducts(arr)
+    }
+
+    function sortLH() {
+
+      let arr = data.sort(function(a,b){
+
+      return a.price - b.price;
+
+      });
+
+      viewProducts(arr)
+
+    }
+
+    function sortHL() {
+
+    let arr = data.sort(function(a,b){
+
+     return b.price - a.price;
+
+    });
+
+    viewProducts(arr)
+
+    }
+
+
+</script>

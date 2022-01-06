@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASOS | SIGN IN ASOS</title>
+    <style>
+        body {
+            background-color: #E0E0E0;
+        }
+
+        #but2 {
+            margin-left: 170px;
+            margin-top: 20px;
+            width: 50%;
+            height: 50px;
+            font-size: 18px;
+            font-weight: 600;
+
+        }
+
+        .container1 {
+            margin: auto;
+            max-width: 50%;
+            width: 50%;
+            border: 1px;
+            background-color: white;
+
+        }
+
+        h3 {
+            text-align: center;
+
+        }
+
+        .button3 {
+            width: 200px;
+            height: 50px;
+
+        }
+
+        img {
+            float: left;
+            max-width: 100%;
+            max-height: 90%;
+        }
+
+        #but {
+            border: 1px;
+            padding: 4%;
+            padding-bottom: 5px;
+        }
+
+        .form1 {
+            border: 1px;
+            width: 350px;
+            margin: auto;
+            margin-top: 35px;
+        }
+
+        form>.input {
+            width: 98%;
+            height: 43px;
+
+        }
+
+        .google {
+            border: 3px;
+            width: 410px;
+            display: grid;
+            grid-gap: 10px;
+            margin: auto;
+            margin-bottom: 100px;
+            grid-template-columns: auto auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid2">
+
+        <div class="container1  box2">
+            <button id="but2">SIGN IN</button>
+            <form onsubmit="signin(event)" class="form1" id="myform">
+
+                <label for="">EMAIL ADDRESS:</label><br><br>
+                <input type="email" name="" class="input" id="email">
+                <label for="">PASSWORD:</label><br><br>
+                <input type="password" name="" class="input" id="pass">
+
+                <button type="submit"
+                    style="width: 100%;height: 60px; margin-top:20px;margin-bottom: 4%; background-color: black;color: white;font-weight: 800;font-size: 15px;">SIGN
+                    IN</button>
+                <div onclick="click()" id="forgot" style="text-align: center;">Forgot Password?</div>
+                <h3>OR SIGN IN WITH...</h3>
+            </form>
+
+
+            <div id="but" class="google">
+                <button class="button3 "><img src="https://img.icons8.com/color/2x/google-logo.png" alt="">
+                    <h3>GOOGLE</h3>
+                </button>
+                <button class="button3 "><img src="https://img.icons8.com/color/2x/mac-os.png" alt="">
+                    <h3>APPLE</h3>
+                </button>
+                <button class="button3 "><img src="https://img.icons8.com/color/2x/facebook-new.png" alt="">
+                    <h3>FACEBOOK</h3>
+                </button>
+                <button class="button3 "><img src="https://img.icons8.com/color/2x/twitter.png" alt="">
+                    <h3>TWITTER</h3>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+
+
+<script>
+
+    function signin(e) {
+        e.preventDefault() // if not used then browese will contines refresing.
+        // grab
+        let myform = document.getElementById("myform");
+
+        // or u can use getelementbyid
+        let email = myform.email.value;
+        let password = myform.pass.value;
+
+        let all_users = JSON.parse(localStorage.getItem("users")) // got allusers name objects form in localstorage
+
+
+        all_users.forEach(function (el) { // el is the parameter 
+
+            if (email == el.email && password == el.password) {
+                alert("logged ");
+                window.location.href = "index.html";  // redirect to..
+
+
+            }
+            if (email != el.email || password != el.password) {
+                alert("Invalid ID")
+
+            }
+
+
+
+
+
+            //console.log(user.name , user.password);
+
+        })
+
+
+
+
+    }
+
+</script>
